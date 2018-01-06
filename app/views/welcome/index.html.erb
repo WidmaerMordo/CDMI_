@@ -8,7 +8,7 @@
             <ul class="main-nav js--main-nav">
                 <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#works">HOW IT WORKS</a></li>
-                <li><a href="#service">OUR SERVICE </a></li>
+                <li><a href="#service">OUR SERVICES </a></li>
                 <li><a href="#login">Client LogIn</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -207,78 +207,18 @@
 <section class="map-box" id="contact">
 
     <div class="form-box" id="form">
+
         <div class="row">
-            <h2>We're happy to hear from you</h2>
-            <!--<p class="long-copy">WE OFFER ON OF THE MOST EXCITING FINANCIAL LITERACY WORKSHOPS IN THE COUNTRY. IF YOUR COMPANY, CIVIC ORGANIZATION, RELIGIOUS ORGANIZATION OR GROUP WOULD LIKE TO BENEFIT FROM OUR FREE ONSITE CREDIT RESTORATION WORKSHOP PLEASE GIVE US A CALL AT 516-620-3500 </p>-->
-            <p style="text-align: center">For more information give us a call.
+          <h2>We're happy to hear from you</h2>
+          <div class="col span-1-of-2">
+            <div id="map"></div>
+          </div>
+
+          <div class=" span-1-of-2" style="float: right; padding: 40px;">
+            <p>  <i class="ion-android-call icon-small"></i>
+              For more information give us a call.
               Our Phone Number is <strong>516-602-3500</strong></p>
-        </div>
-        <br>
-
-        <div class="row">
-            <form method="post" action="" class="contact-form">
-
-                <div class="row">
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col span-1-of-3">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="find-us">How did you find us?</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <select name="find-us" id="find-us">
-                            <option value="friends" selected>Friends</option>
-                            <option value="search">Search engine</option>
-                            <option value="ad">Advertisement</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="news">Newsletter?</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="checkbox" name="news" id="news" checked> Yes, please
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Drop us a line</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="message" placeholder="Your message"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" value="Send it!">
-                    </div>
-                </div>
-
-            </form>
-
+          </div>
         </div>
     </div>
 </section>
@@ -333,3 +273,19 @@
         </p>
     </div>
 </footer>
+<script>
+    function initMap() {
+        var uluru = {lat: 40.6549616, lng: -73.6734847};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABy6-Lo5pC9pYz1eLoYfkmh0k7Npy4PH0&callback=initMap">
+</script>
