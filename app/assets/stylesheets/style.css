@@ -599,6 +599,7 @@ footer {
     color: #888;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
+    font-size: 15px;
 }
 
 .footer-nav li a:hover,
@@ -672,4 +673,13 @@ footer p {
 
 .plan-box.padding {
     padding: 6px 10px 5px 10px;
+}
+
+
+/*  Some Custom Styles*/
+
+/*hover effect on about us box*/
+
+.hover:hover{
+    background: aliceblue;
 }
