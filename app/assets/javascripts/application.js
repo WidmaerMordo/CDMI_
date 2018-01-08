@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     $('#newsletter-form').submit(function(){
       $('.modal').hide();
-      $('#newsletter-form')[0].reset();
+      // $('#newsletter-form')[0].reset();
     });
 
     $('.showmore').showMore({
