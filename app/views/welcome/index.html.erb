@@ -1,9 +1,9 @@
-
+<p id="email-alert" style="display: none;background-color: aliceblue; padding: 20px; font-size:20px; color: forestgreen;font-weight: 500;">Your email has been successfully submitted.</p>
 <header>
-    <nav>
+    <nav class="">
         <div class="row">
             <img src="<%= asset_path 'logo' %>" alt="CDMI logo" class="logo">
-			<img src="<%= asset_path 'logo' %>" alt="CDMI logo" class="logo-black">
+			      <img src="<%= asset_path 'logo' %>" alt="CDMI logo" class="logo-black">
 
             <ul class="main-nav js--main-nav">
                 <li><a href="#about">ABOUT US</a></li>
@@ -17,11 +17,13 @@
     </nav>
     <div class="hero-text-box">
         <h1>Stop paying your bad debts <br> and start filtering them.</h1>
-        <a class="btn btn-full js--scroll-to-start" href="#contact">Fix my credit now </a>
+        <a class="btn btn-full" id="fix-credit-btn" href="#">Fix my credit now </a>
         <a class="btn btn-ghost js--scroll-to-start" href="#works">Learn more</a>
     </div>
 
 </header>
+
+
 <section class="section-features js--section-features" id="about">
     <div class="row">
         <h2>Rapid Restructure: The Fastest Way To Become Debt Free With Perfect Credit </h2>
@@ -31,34 +33,37 @@
     </div>
 
     <div class="row">
-        <div class="col span-1-of-4 box hover">
+        <div class="col span-1-of-4 box hover  overflow-hide">
             <i class="ion-funnel icon-big"></i>
-            <h3>Debt Filtration</h3>
-            <p>
-                Debt Filtration  is a system of 48 government laws and programs that will quickly eliminate your bad
-                debt while simultaneously restoring your credit, legally and permanently, without payment, bankruptcy,
-                consumer credit counselling or debt consolidation companies </p>
+            <h3 class="para-heading"><strong>Debt Filtration</strong></h3>
+
+                <p class="showmore">
+                  Debt Filtration  is a system of 48 government laws and programs that will quickly eliminate your bad
+                  debt while simultaneously restoring your credit, legally and permanently, without payment, bankruptcy,
+                  consumer credit counselling or debt consolidation companies
+                </p>
+
         </div>
-        <div class="col span-1-of-4 box hover">
+        <div class="col span-1-of-4 box hover overflow-hide">
             <i class="ion-cash icon-big"></i>
-            <h3>Strategic Credit Restoration</h3>
-            <p> We are not a credit repair company and we will never offer any credit repair products. Our products
+            <h3 class="para-heading"><strong>Strategic Credit Restoration</strong></h3>
+            <p class="showmore"> We are not a credit repair company and we will never offer any credit repair products. Our products
                 are based on a new FICO-driven technique called Rapid Restructure. Comparing credit repair to Rapid
                 Restructure is like comparing a horse and buggy to a Ferrari. Yes, they are both transportation but the
                 technology differential makes them light years apart.
             </p>
         </div>
-        <div class="col span-1-of-4 box hover">
+        <div class="col span-1-of-4 box hover overflow-hide">
             <i class="ion-arrow-graph-up-right icon-big"></i>
-            <h3>Score Enhancement Algorithm</h3>
-            <p>Your credit score is created by using complex algorithms. Therefore it takes an algorithm to beat an algorithm.
+            <h3 class="para-heading"><strong>Score Enhancement Algorithm</strong></h3>
+            <p class="showmore">Your credit score is created by using complex algorithms. Therefore it takes an algorithm to beat an algorithm.
                 That is why our founder wrote the only FICO restoration algorithm available in this country. Using this algorithm
                 we currently hold all three credit industry records.</p>
         </div>
-        <div class="col span-1-of-4 box hover">
+        <div class="col span-1-of-4 box hover overflow-hide">
             <i class="ion-ios-copy-outline icon-big"></i>
-            <h3>Pre Underwriting</h3>
-            <p>Pre-underwriting takes the credit restoration process one step further by putting your credit through a more
+            <h3 class="para-heading"><strong>Pre Underwriting</strong></h3>
+            <p class="showmore">Pre-underwriting takes the credit restoration process one step further by putting your credit through a more
               thorough review process after you have reached your desired score. The pre-underwriting process will filter and
               identify any barriers to the loan qualification process. You now have a tool that will allow you to be approved
               for every loan, now you can turn your credit into money.  </p>
@@ -96,10 +101,6 @@
 
         </div>
     </div>
-
-    <div style="text-align: center">
-      <p><a href="#contact">CALL NOW TO SPEAK TO A CERTIFIED CREDIT PLANNER(CCP)</a></p>
-    </div>
 </section>
 
 <section class="section-cities" id="service">
@@ -107,10 +108,10 @@
         <h2>ADDITIONAL SERVICES WE OFFER</h2>
     </div>
     <div class="row">
-        <div class="col span-1-of-2 box">
+        <div class="col span-1-of-2 box ">
             <i class="ion-android-happy icon-big"></i>
-            <h3>PERFECT BUSINESS CREDIT</h3>
-            <p>
+            <h3 class="para-heading"><strong>PERFECT BUSINESS CREDIT</strong></h3>
+            <p class="">
               To run and build your successful business, you need to qualify for loans and credit lines at the
               best loan rates possible. Business credit is essential to make this happen, and it helps you
               access money even when you can’t qualify for a loan. The CDMI Business Credit Builder helps
@@ -118,10 +119,10 @@
               approved, and highly personalized process. By using our full-service business credit adviser,
               you’ll be guided every step of the way, simplifying your experience of obtaining business credit.</p>
         </div>
-        <div class="col span-1-of-2 box">
+        <div class="col span-1-of-2 box ">
             <i class="ion-ios-stopwatch-outline icon-big"></i>
-            <h3>PAY YOUR JUDGMENT, BENEFIT FROM JUDGMENT ABATEMENT</h3>
-            <p>Our judgment abatement team is one of the best in the country. They have been extremely
+            <h3 class="para-heading"><strong>PAY YOUR JUDGMENT, BENEFIT FROM JUDGMENT ABATEMENT</strong></h3>
+            <p class="">Our judgment abatement team is one of the best in the country. They have been extremely
               successful helping our clients reverse, discontinue, dismiss or suspend judgments. If you
               simply pay or settle you judgment it will still destroy your credit. After all, a paid or satisfied
               judgment scores the same as an unpaid judgment. In addition, our methodologies have
@@ -130,10 +131,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col span-1-of-2 box">
+        <div class="col span-1-of-2 box ">
             <i class="ion-trash-b icon-big"></i>
-            <h3>HARD TARGET REMOVAL</h3>
-            <p>
+            <h3 class="para-heading"><strong>HARD TARGET REMOVAL</strong></h3>
+            <p class="">
               Our hard target removal process is the DEFINING SKILL set that sets us apart from all other credit
               companies in the country. We have the ability to design a strategy to remove every single
               derogatory item on your credit. This is called ZDC (Zero Derogatory Credit). Credit repair
@@ -143,10 +144,10 @@
               and tax liens.
             </p>
         </div>
-        <div class="col span-1-of-2 box">
+        <div class="col span-1-of-2 box ">
             <i class="ion-thumbsup icon-big"></i>
-            <h3>LOANS FOR ANY REASON</h3>
-            <p>
+            <h3 class="para-heading"><strong>LOANS FOR ANY REASON</strong></h3>
+            <p class="">
               In 2015 our founder was asked to speak to Congress on the problem of access to capital. The
               reason we were called by Congress is because we have such a comprehensive understanding
               of finance in America. In addition, we have the relationships with our lenders to help push
@@ -157,9 +158,6 @@
         </div>
     </div>
 
-    <div style="text-align: center">
-      <p><a href="#contact">CALL NOW TO SPEAK TO A CERTIFIED CREDIT PLANNER(CCP)</a></p>
-    </div>
 </section>
 
 
@@ -201,9 +199,6 @@
         </div>
     </div>
 
-    <div style="text-align: center">
-      <p><a href="#contact">CALL NOW TO SPEAK TO A CERTIFIED CREDIT PLANNER(CCP)</a></p>
-    </div>
 </section>
 
 
@@ -219,15 +214,22 @@
   </div>
 
   <section class="row" id="specs">
-    <div class="col span-1-of-3" id="affiliate" style="margin-bottom: 30px;">
-      <h4><strong>BECOME AN AFFILIATE</strong></h4>
+    <div class="col span-1-of-3" id="affiliate" >
+      <i class="ion-person icon-big"></i>
+      <h3  class="para-heading"><strong>BECOME AN AFFILIATE</strong></h3>
       <p>Earn an extra $5000 per month helping your friends and
         family get access to capital, eliminate their bad debts without payment, and get perfect credit in a very
         short time. Over 80% of Americans believe that they have a credit or debt problem. Now you have
         the opportunity to help thousands and make a great salary at the same time.</p>
+
+      <div class="" style="text-align: center;margin-top:20px;">
+          <a href="#specs" class="btn btn-full"><h6>BECOME an AFFILIATE</h6></a>
+      </div>
+
     </div>
-    <div class="col span-1-of-3" id="donate" style="margin-bottom: 30px;">
-      <h4><strong>DONATE TO OUR CROWDFUNDING APP</strong></h4>
+    <div class="col span-1-of-3" id="donate" >
+      <i class="ion-iphone icon-big"></i>
+      <h3  class="para-heading"><strong>DONATE TO OUR CROWDFUNDING APP</strong></h3>
       <p>We are delighted to have launched our
         crowdfunding appeal, which aims to raise $500,000 between now and May 25th 2018. Every dollar
         raised during the appeal will be used to launch our new game changing credit restoration app. This
@@ -236,19 +238,27 @@
         seconds. Imagine being able to restore, build and enhance your credit instantly. So there’s never
         been a better time to donate and double the impact of your support! This appeal will raise money to
         help us offer the most advanced credit restoration software in the world.</p>
+
+      <div class="" style="text-align: center;margin-top:20px;">
+          <a href="#specs" class="btn btn-full"><h6>DONATE TO OUR CROWNDFUNDING APP</h6></a>
+      </div>
+
     </div>
-    <div class="col span-1-of-3" id="investor" style="margin-bottom: 30px;">
-      <h4><strong>BECOME A CREDIT INVESTOR</strong></h4>
-      <p>Getting started with investing is easy, and
+    <div class="col span-1-of-3" id="investor" >
+      <i class="ion-social-usd icon-big"></i>
+      <h3  class="para-heading"><strong>BECOME A CREDIT INVESTOR</strong></h3>
+      <p >Getting started with investing is easy, and
         anyone can do it! Come join our Credit Investor Program and you can invest with your credit.
         No money needed. In addition, investing with your credit is inherently safer than investing
         your hard earned money because we offer Credit Insurance and Debt Insurance.</p>
+
+      <div class="" style="text-align: center; margin-top:20px;">
+          <a href="#specs" class="btn btn-full"><h6>BECOME AN INVESTOR</h6></a>
+      </div>
+
     </div>
   </section>
 
-  <div style="text-align: center">
-    <p><a href="#contact">CALL NOW TO SPEAK TO A CERTIFIED CREDIT PLANNER(CCP)</a></p>
-  </div>
 </section>
 
 <section class="map-box" id="contact">
@@ -279,7 +289,7 @@
     </div>
 </section>
 
-<section class="row">
+<!-- <section class="row">
 
     <div class="col span-1-of-3">
         <div class="plan-box padding">
@@ -299,7 +309,7 @@
         </div>
     </div>
 
-</section>
+</section> -->
 
 <footer>
     <div class="row">
@@ -327,19 +337,60 @@
         </p>
     </div>
 </footer>
+
+
+  <!-- The Modal -->
+  <div id="formModal" class="modal">
+
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+      <div class="" style="margin-bottom: 20px;">
+        <h4>We're happy to hear from you</h4>
+      </div>
+
+
+      <%= form_for :newsletter, url: '/sendmail', html: {id: 'newsletter-form'}, remote: true do |f|%>
+        <%= f.label 'First Name'%>
+        <%= f.text_field :first_name, autofocus: true %>
+        <%= f.label 'Last Name'%>
+        <%= f.text_field :last_name%>
+        <%= f.label 'Email'%>
+        <%= f.text_field :email%>
+        <%= f.label 'Message'%>
+        <%= f.text_area :message%>
+        <%= f.submit 'Submit' %>
+      <%end%>
+    </div>
+
+  </div>
+
+
 <script>
+    $(document).ready(function(){
+      $('#newsletter-form').on('ajax:success', function(data, status, xhr) {
+        console.log(data);
+        $('#email-alert').show();
+      });
+    });
+
+
     function initMap() {
-        var uluru = {lat: 40.6549616, lng: -73.6734847};
+        var address = {lat: 40.6549616, lng: -73.6734847};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 16,
-            center: uluru
+            center: address
         });
         var marker = new google.maps.Marker({
-            position: uluru,
+            position: address,
             map: map
         });
     }
+
+
 </script>
-<script async defer
+<script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABy6-Lo5pC9pYz1eLoYfkmh0k7Npy4PH0&callback=initMap">
 </script>

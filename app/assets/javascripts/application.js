@@ -12,5 +12,35 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
 //= require_tree .
+
+
+
+$(document).ready(function() {
+    $('#fix-credit-btn').click(function(){
+        console.log('inside fix credit button');
+        $('.modal').show();
+    });
+
+    $('.close').click(function(){
+        console.log('inside close');
+        $('.modal').hide();
+        $('#newsletter-form')[0].reset();
+    });
+
+    $('#newsletter-form').submit(function(){
+      $('.modal').hide();
+      $('#newsletter-form')[0].reset();
+    });
+
+    $('.showmore').showMore({
+          speedDown: 300,
+          speedUp: 300,
+          height: '100px',
+          showText: 'Show more',
+          hideText: 'Show less'
+     });
+
+
+});

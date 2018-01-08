@@ -83,4 +83,21 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+
+    # smtp Settings
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_options = {from: 'info@cdmionline.com', host: 'cdmionline.com'}
+  config.action_mailer.smtp_settings = {
+    address: 'smtpout.secureserver.net',
+    port: 25,
+    user_name: 'info@cdmionline.com',
+    password: 'infocdmi',
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
+
 end
