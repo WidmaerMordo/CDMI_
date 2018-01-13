@@ -84,6 +84,7 @@ test:
 #
 production:
   <<: *default
+  host: localhost
   database: cdmi_production
-  username: cdmi
+  username: postgres
   password: <%= ENV['CDMI_DATABASE_PASSWORD'] %>
