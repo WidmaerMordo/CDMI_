@@ -5,6 +5,6 @@ class VisitorMailer < ApplicationMailer
       @lname = lname
       @email = email
       @msg = msg
-      mail(to: 'dr.michael@cdmionline.com', subject: "#{fname} #{lname} says")
+      mail(to: 'drgrayson@cdmionline.com', subject: "#{fname} #{lname} says")
   end
 end
