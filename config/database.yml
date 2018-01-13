@@ -85,6 +85,7 @@ test:
 production:
   <<: *default
   host: localhost
+  port: 5433
   database: cdmi_production
   username: postgres
-  password: <%= ENV['CDMI_DATABASE_PASSWORD'] %>
+  password: 71274A829559C2C11B7A9B81402CBEA6BB3CB93F
