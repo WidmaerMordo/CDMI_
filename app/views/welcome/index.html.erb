@@ -9,7 +9,7 @@
                 <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#works">HOW IT WORKS</a></li>
                 <li><a href="#service">OUR SERVICES </a></li>
-                <li><a href="#login">Client LogIn</a></li>
+                <li><a id="login-btn" href="#">Client LogIn</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
@@ -366,6 +366,34 @@
     </div>
 
   </div>
+
+
+
+  <div id="loginModal" class="modal">
+
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+      <div class="" style="margin-bottom: 20px;">
+        <h4>Provide your credentials to login</h4>
+      </div>
+
+      <div onmouseover="change_background(this, '#FCF6CF')" onmouseout="change_background(this,'#E8E8E8')" id="client_portal_content" >
+          &nbsp;Client Login &nbsp;&nbsp;&nbsp;<INPUT id=logintext size="15" onblur="if (this.value == '') this.value='Your client ID'" onfocus="this.value=''" value="Your client ID"></INPUT><INPUT id=loginbutton onclick="if (document.getElementById('logintext').value != 'Your client ID') window.open('http://www.CMMC186.xyz/progress/progress.php?id=p-'+document.getElementById('logintext').value)" type=button value=Login></INPUT>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
 
 
 <script>

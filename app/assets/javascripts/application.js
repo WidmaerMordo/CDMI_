@@ -20,7 +20,12 @@
 $(document).ready(function() {
     $('#fix-credit-btn').click(function(){
         console.log('inside fix credit button');
-        $('.modal').show();
+        $('#formModal').show();
+    });
+
+    $('#login-btn').click(function(){
+        console.log('inside login button');
+        $('#loginModal').show();
     });
 
     $('.close').click(function(){
@@ -41,6 +46,8 @@ $(document).ready(function() {
           showText: 'Show more',
           hideText: 'Show less'
      });
+
+
 
 
 });
