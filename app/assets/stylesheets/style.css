@@ -599,7 +599,7 @@ footer {
     color: #888;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .footer-nav li a:hover,

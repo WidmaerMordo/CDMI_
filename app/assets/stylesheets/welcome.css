@@ -65,3 +65,40 @@
   height: 75px;
   margin-bottom: 30px;
 }
+
+/* privacy page*/
+.page p {
+    line-height: 2;
+}
+
+.page .entry-title {
+    /*font-size: 48px;*/
+    font-size: 3em;
+    font-weight: 300;
+    color: #379ad1;
+}
+
+#privacy{
+    padding: 60px;
+    margin-top: 70px;
+    font-size: 15px;
+}
+
+#privacy .block {
+    margin-bottom: 25px;
+    /*border-bottom: solid 1px lightgray;*/
+}
+
+#privacy .block .list{
+    list-style-type: decimal;
+}
+
+#privacy .block .list li{
+    padding-bottom: 5px;
+}
+
+#privacy .block .block-title{
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #65a2c3;
+}
