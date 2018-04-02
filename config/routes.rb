@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'welcome#index'
   post 'sendmail', to: 'welcome#sendmail'
   get 'privacy', to: 'welcome#privacy'
+  get 'terms', to: 'welcome#terms'
 end
